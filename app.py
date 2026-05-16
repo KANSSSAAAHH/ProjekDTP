@@ -5,7 +5,7 @@ import numpy as np
 import nltk
 import random
 from nltk.stem import WordNetLemmatizer
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('chatbot.json').read())
