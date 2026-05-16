@@ -121,7 +121,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.image("https://raw.githubusercontent.com/KANSSSAAAHH/ProjekDTP/main/public/cottonfit-logo.png", width=100)
+st.image("https://raw.githubusercontent.com/KANSSSAAAHH/ProjekDTP/main/src/assets/cottonfit-logo.png", width=100)
 st.title("Smart Chat Assistant")
 st.write("Kami siap membantu mencari kaos asik untuk momen epikmu!")
 
