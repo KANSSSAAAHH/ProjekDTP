@@ -1,5 +1,4 @@
 streamlit
 nltk
 numpy
-tensorflow==2.10.0
-keras==2.10.0
+tensorflow-cpu==2.13.0
