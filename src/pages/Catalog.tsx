@@ -217,7 +217,7 @@ const Catalog = () => {
             </a>
 
             {/* Tombol Smart Chat yang diperbaiki */}
-            <Link to="http://localhost:8501/" target="_blank"> 
+            <Link to="https://web-production-aed51.up.railway.app" target="_blank"> 
               <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white text-lg px-20 btn-smart-chat">
                 Smart Chat
               </Button>
