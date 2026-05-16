@@ -3,7 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Users, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import productShowcase from "@/assets/product-showcase.jpg";
-import videoMenjahit from "@/assets/menjahit-baju.mp4";
+import videoHero from "@/assets/menjahit-baju.mp4";
+import videoJahit from "@/assets/jahit-baju.mp4";
 import videoCustomBaju from "@/assets/custom-baju.mp4";
 import { IconBebasCustom, IconCottonCombed, IconHarga, IconWA, IconIG, IconTiktok, IconShopee } from "@/assets/icons";
 import { KaosKomunitas, KaosDaycare, KaosSatuan } from "@/assets/products";
@@ -69,7 +70,7 @@ const Home = () => {
   return (
     <div className="flex flex-col">
 
-      {/* Hero Section */}
+      {/* Hero Section - pakai menjahit-baju.mp4 */}
       <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
         <video
           autoPlay
@@ -78,7 +79,7 @@ const Home = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={videoMenjahit} type="video/mp4" />
+          <source src={videoHero} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-white/65" />
         <div className="container relative z-10 mx-auto px-4 py-20 text-center">
@@ -159,7 +160,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Kualitas Section dengan 2 Video */}
+      {/* Kualitas Section dengan 2 Video berbeda */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -172,10 +173,10 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Video 1 */}
+            {/* Video 1 - jahit-baju.mp4 */}
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <video controls className="w-full">
-                <source src={videoMenjahit} type="video/mp4" />
+                <source src={videoJahit} type="video/mp4" />
               </video>
               <div className="p-4 bg-secondary text-center">
                 <p className="font-semibold text-blue-900">Proses Menjahit</p>
@@ -183,7 +184,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Video 2 */}
+            {/* Video 2 - custom-baju.mp4 */}
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <video controls className="w-full">
                 <source src={videoCustomBaju} type="video/mp4" />
@@ -194,7 +195,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
