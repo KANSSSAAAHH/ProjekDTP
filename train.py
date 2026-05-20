@@ -8,8 +8,8 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
 
-nltk.download('punkt')
-nltk.download('wordnet')
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('chatbot.json').read())

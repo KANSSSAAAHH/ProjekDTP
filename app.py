@@ -10,9 +10,8 @@ from keras.models import Sequential, load_model
 from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
 
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('punkt_tab')
+nltk.download('punkt', quiet=True)
+nltk.download('wordnet', quiet=True)
 
 lemmatizer = WordNetLemmatizer()
 
